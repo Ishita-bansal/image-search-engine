@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="imagesearch.css" />
+  </head>
+  <body>
+   
+    <h1>Image search Engine</h1>
+    <form id="search-form">
+      <input type="text" id="search-box" placeholder="search anything here" />
+      <button>Search</button>
+    </form>
+    <div id="search-result" class="grow"></div>
+    <button id="show-more-btn">Show more</button>
+
+    <!-- create a modal -->
+<div id="modal-overlay">
+    <div id="modal">
+             <div id="close-btn-area">
+              <button id="close-btn">X</button>
+             </div>
+       <div id="showimages">
+                <img id="large-images" src="" alt="">
+             </div>
+    </div>
+</div>
+  </body>
+  <script src="imagesearch.js"></script>
+</html>

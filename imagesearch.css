@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+
+body{
+    background: #39297b;
+    color:white;
+}
+
+h1{
+    text-align: center;
+    margin: 100px auto 50px;
+    font-weight: 600;
+}
+
+form{
+    width:90%;
+    max-width: 600px;
+    margin:auto;
+    height: 80px;
+    background: #434989;
+    display:flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+form input{
+    flex:1;
+    height:100%;
+    border:none;
+    outline:none;
+    background-color: transparent;
+    color:#fff;
+    font-size: 18px;
+    padding:0 30px;
+}
+
+form button{
+    padding: 0 40px;
+    height: 100%;
+    background-color: #ff3929;
+    color:#fff;
+    font-size: 18px;
+    border:none;
+    outline:none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor:pointer;
+}
+
+::placeholder{
+    color:#fff;
+    font-size:18px;
+}
+
+#show-more-btn{
+    background:#ff3929;
+    color:#fff;
+    border: none;
+    outline:none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display:none;
+} 
+
+#search-result{
+  z-index:1;
+  width:90%;
+  margin:100px auto 50px;
+  display:flex;
+  flex-wrap: wrap;
+  gap:20px;
+  padding:40px;
+  background-color: #434989;
+}
+
+#search-result img{
+    width: 300px;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 5px;
+}
+
+.grow img{
+    transition:1s ease;
+}
+
+.grow img:hover{
+
+    transform:scale(1.2);
+    transition:1s ease;
+}
+
+#modal-overlay{
+    display: none; 
+    position: fixed; 
+    z-index: 1;  
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: #ffffff41; 
+    background-color: #ffffff41; 
+}
+
+
+#modal{
+    position:relative;
+    top:200px;
+    background-color: transparent;
+    margin:auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px; 
+    height:48vh;
+    
+}
+
+#modal #showimages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+#modal #showimages img{
+max-width:400px;
+height:500px;
+ border-radius:5px;
+}
+
+#modal #close-btn-area button{
+    position:absolute;
+    right:0;
+    top:0;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    border:none;
+    outline:none;
+    background-color: transparent;
+    font-size:20px;
+    font-weight:600;
+}
+
+#modal #close-btn-area button:hover{
+    color:white;
+}
+
